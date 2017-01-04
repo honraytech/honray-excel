@@ -80,8 +80,13 @@ function exportExcel($data, $title, $version = '2007', $savefile = '', $width = 
     //保存到服务器
     $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
     $filename = $savefile.$ext;
-    $objWriter->save('Uploads/excel/'.$filename);
-    return 'Uploads/excel/'.$filename;  
+
+    if (is_dir('./uploads/excel/')) {
+        @mkdir('./uploads/excel/');
+    }
+    
+    $objWriter->save('uploads/excel/'.$filename);
+    return 'uploads/excel/'.$filename;  
 }
 
 ?>

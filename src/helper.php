@@ -17,7 +17,7 @@
 function exportExcel($data, $title, $version = '2007', $savefile = '', $width = '', $font= ['fontfamily'=>'SimHei','size'=>'12','color'=>'000000','bold'=>'false'])
 {
     ini_set('max_execution_time', '0');
-    import('honray.tp5-qrcode.src.PHPExcel.PHPExcel', VENDOR_PATH, '.php');
+    import('honray.tp5-excel.src.PHPExcel.PHPExcel', VENDOR_PATH, '.php');
 
     //若没有指定文件名
     if (empty($savefile)) {
@@ -84,7 +84,7 @@ function exportExcel($data, $title, $version = '2007', $savefile = '', $width = 
     if (is_dir('./uploads/excel/')) {
         @mkdir('./uploads/excel/');
     }
-    
+
     $objWriter->save('uploads/excel/'.$filename);
     return 'uploads/excel/'.$filename;  
 }

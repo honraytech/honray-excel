@@ -1,0 +1,20 @@
+{
+    "name": "honray/tp5-excel",
+    "description": "excel package for thinkphp5",
+    "license": "apache-2.0",
+    "authors": [
+        {
+            "name": "honray",
+            "email": "tech@honraytech.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "think\\excel\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}

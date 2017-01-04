@@ -40,6 +40,11 @@ function exportExcel($data, $title, $version = '2007', $savefile = '', $width = 
         return '输入的版本参数有误';
     }
 
+    //若指字了excel表头，则把表单追加到正文内容前面去
+    if (is_array($title)) {
+        array_unshift($data, $title);
+    }
+
     //实例化excel
     $objPHPExcel = new \PHPExcel();
 

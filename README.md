@@ -12,10 +12,10 @@ thinkphp5 生成excel类库
 ###在后端生成excel,并返回路径
 
 
-#####执行方法exportExcel($data, $title, $version = '2007', $savefile = '', $width = '', $font= ['fontfamily'=>'SimHei','size'=>'12','color'=>'000000','bold'=>'false'])
+#####执行方法exportExcel($data, $title, $version = '2007', $savefile = '')
 
 
-/**
+
 * 在服务器生成excel表并-返回路径
 * 
 * -------------------------------------------------------------------------

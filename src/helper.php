@@ -81,7 +81,7 @@ function exportExcel($data, $title, $version = '2007', $savefile = '', $width = 
     $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
     $filename = $savefile.$ext;
 
-    if (is_dir('./uploads/excel/')) {
+    if (!is_dir('./uploads/excel/')) {
         @mkdir('./uploads/excel/');
     }
 

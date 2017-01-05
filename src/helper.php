@@ -26,7 +26,7 @@ function exportExcel($data, $title, $version = '2007', $savefile = '', $width = 
 
     //若没有指定宽度
     if (empty($width)) {
-       $width = ['A' => 10,'B' => 10,'C' => 25,'D' => 20,'E' => 25,'F' => 25,'G' => 25,'H' => 25];
+       $width = ['A' => 25,'B' => 25,'C' => 25,'D' => 25,'E' => 25,'F' => 25,'G' => 25,'H' => 25];
     }
 
     //判断版本输出和后缀名

@@ -1,5 +1,5 @@
 # honray-excel
-thinkphp5 生成excel类库
+thinkphp5 系统生成excel函数
 
 ## 安装
 

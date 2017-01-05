@@ -14,7 +14,7 @@
 * 返回值:文件名称$url:如lession.xls
 * -------------------------------------------------------------------
 **/
-function exportExcel($data, $title, $version = '2007', $savefile = '', $width = '', $font= ['fontfamily'=>'SimHei','size'=>'12','color'=>'000000','bold'=>'false'])
+function export_excel($data, $title, $version = '2007', $savefile = '', $width = '', $font= ['fontfamily'=>'SimHei','size'=>'12','color'=>'000000','bold'=>'false'])
 {
     ini_set('max_execution_time', '0');
     import('honray.tp5-excel.src.PHPExcel.PHPExcel', VENDOR_PATH, '.php');

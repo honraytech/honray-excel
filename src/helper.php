@@ -14,11 +14,11 @@
 * 返回值:文件名称$url:如lession.xls
 * -------------------------------------------------------------------
 **/
-use think\excel\PHPExcel;
-
 function export_excel($data, $title, $version = '2007', $savefile = '', $width = '', $font= ['fontfamily'=>'SimHei','size'=>'12','color'=>'000000','bold'=>'false'])
 {
     ini_set('max_execution_time', '0');
+    import('honray.tp5-excel.src.PHPExcel.PHPExcel', VENDOR_PATH, '.php');
+
     //若没有指定文件名
     if (empty($savefile)) {
        $savefile='data';
@@ -46,7 +46,7 @@ function export_excel($data, $title, $version = '2007', $savefile = '', $width =
     }
 
     //实例化excel
-    $objPHPExcel = new PHPExcel();
+    $objPHPExcel = new \PHPExcel();
 
     //表示用第$i张表格         
     $obj = $objPHPExcel->setActiveSheetIndex(0);

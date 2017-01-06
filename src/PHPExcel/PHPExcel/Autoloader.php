@@ -33,7 +33,7 @@ PHPExcel_Autoloader::Register();
 if (ini_get('mbstring.func_overload') & 2) {
     throw new PHPExcel_Exception('Multibyte function overloading in PHP must be disabled for string functions (2).');
 }
-PHPExcel_Shared_String::buildCharacterSets();
+// PHPExcel_Shared_String::buildCharacterSets();
 
 
 /**

@@ -25,7 +25,6 @@
  * @version    ##VERSION##, ##DATE##
  */
 
-namespace think\excel;
 
 /** PHPExcel root directory */
 if (!defined('PHPEXCEL_ROOT')) {

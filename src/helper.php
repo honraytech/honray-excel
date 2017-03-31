@@ -87,8 +87,7 @@ function export_excel($data, $title, $version = '2007', $savefile = '', $width =
     $filename = $savefile.$ext;
 
     if (!is_dir('./uploads/excel/')) {
-        @mkdir('./uploads/excel/');
-        @chmod('./uploads/qrcode/', 0777);
+        @mkdir(ROOT_PATH . 'uploads/excel/', 0777, true);
     }
 
     $objWriter->save('uploads/excel/'.$filename);
